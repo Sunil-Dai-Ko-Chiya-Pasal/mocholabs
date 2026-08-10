@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-ink-600 font-body antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* shared "sticker" border used by cards, pills, buttons across the page */
+  .sticker-border {
+    @apply border-2 border-ink-600 rounded-card shadow-hard;
+  }
+
+  .sticker-border-small {
+    @apply border-2 border-ink-600 rounded-card;
+  }
+}
