@@ -1,6 +1,17 @@
+// components/Hero.tsx
 import Button from "./Button";
 import Pill from "./Pill";
 import MockupStack from "./MockupStack";
+import TypingWord from "./TypingWord";
+
+const industries = [
+  "e-commerce",
+  "real estate",
+  "healthcare",
+  "fintech",
+  "hospitality",
+  "logistics",
+];
 
 export default function Hero() {
   return (
@@ -16,9 +27,8 @@ export default function Hero() {
 
       <h1 className="mx-auto max-w-4xl text-4xl font-bold uppercase leading-[1.1] tracking-tight text-ink-600 sm:text-5xl md:text-6xl">
         Scale your{" "}
-        <span className="inline-block rotate-[-2deg] rounded-lg border-2 border-ink-600 bg-primary-500 px-3 text-cream shadow-hard-sm">
-          e-commerce
-        </span>{" "}
+        <TypingWord words={industries} />{" "}
+        <br></br>
         to the moon.
       </h1>
 
